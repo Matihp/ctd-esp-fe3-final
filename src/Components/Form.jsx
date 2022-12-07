@@ -1,12 +1,23 @@
 import React from "react";
-
+import { useState } from "react";
 
 const Form = () => {
   //Aqui deberan implementar el form completo con sus validaciones
+  const [name,setName]=useState("hola");
 
+  const handleSubmit=(e)=>{
+    e.preventDefault()
+    name.length>5 ? alert(`“Gracias ${name}, te contactaremos cuando antes vía mail `) 
+    : alert("Por favor verifique su información nuevamente")
+  }
   return (
     <div>
-      <form>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="">Nombre</label>
+        <input type="text"name='username' onChange={(e)=> setName(e.target.value)}/>
+        <label htmlFor="">Correo</label>
+        <input type="email"name='email' id="" />
+        <button>Enviar</button>
       </form>
     </div>
   );
