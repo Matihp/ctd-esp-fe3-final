@@ -8,7 +8,6 @@ import Detail from "./Routes/Detail";
 import Contact from "./Routes/Contact"
 import Favs from "./Routes/Favs"
 import {routes} from './Routes'
-import { context } from 'msw';
 import { ContextProvider } from './Components/utils/global.context';
 
 
@@ -17,9 +16,9 @@ root.render(
   <ContextProvider>
     <React.StrictMode>
       <BrowserRouter>
-        <Routes>
+      <Routes>
             <Route path='/' element={<App/>}>
-              <Route path={routes.home} element={<Home/>}/>
+              <Route path={routes.home} element={<Home />}/>
               <Route path={routes.dentist} element={<Detail/>}/>
               <Route path={routes.contact} element={<Contact/>}/>
               <Route path={routes.favs} element={<Favs/>}/>

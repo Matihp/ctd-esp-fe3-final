@@ -6,10 +6,9 @@ import { useGlobalStates } from '../Components/utils/global.context'
 const Home = () => {
 
    const {data}=useGlobalStates()
-   console.log(data)
   return (
     <main className="" >
-      <h1>Home</h1>
+      <h1 >Home</h1>
       <div className='card-grid'>
         {data.map((e)=><Card name={e.name} id={e.id} username={e.username}/>)}
         <Card/>

@@ -30,6 +30,7 @@ nav{
   padding: 1rem;
   gap: 15px;
 }
+
 .container{
   display: flex;
   justify-content: space-around;
@@ -41,17 +42,24 @@ nav{
   background-color: black;
   width: 40px;
   height: 40px;
+  margin-top: 10px;
+  margin-left: 9px;
 }
-
+.btn2{
+  border-radius: 10px;
+  border: none;
+}
 a{
-  color: #000;
   text-decoration: none;
   margin: 5px;
   cursor: pointer;
 }
 a:hover{
-  color: rgb(136, 136, 136);
-} 
+  color: rgb(151, 151, 151);
+}
+.adjust{
+  height: 70vh;
+}
 
 footer {
   display: flex;
@@ -63,6 +71,8 @@ footer {
   width: 90%;
   height: 40px;
   margin-top: 2rem;
+  background-color: pink;
+  width: auto;
 }
 
 footer > img{
@@ -106,7 +116,14 @@ form{
   flex-wrap: wrap;
   margin: 0 auto;
 }
-
+.fav{
+  gap: 1rem;
+  width: 90vw;
+  height: auto;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  text-align: center;
+}
 table {
  border-collapse: collapse;
     border-spacing: 0;
