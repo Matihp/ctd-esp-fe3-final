@@ -1,9 +1,8 @@
 import React from "react";
 
 
-
-//Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 const Favs = () => {
+
   const borrarStorage=()=>{
     localStorage.clear()
     window.location.reload()
@@ -14,9 +13,8 @@ const Favs = () => {
   return (
     <>
       <h1>Dentists favs</h1>
-      <div className="fav">
+      <div className="fav" >
         
-        <p></p>
         {fav ? <img src="./images/doctor.jpg" alt=""width={200}height={200} /> : null}
 
         {fav ? <p>{fav.name} <p>{fav.username}</p></p> : null}

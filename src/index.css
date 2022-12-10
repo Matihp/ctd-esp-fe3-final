@@ -22,6 +22,20 @@ code {
 h1{
   text-align: center;
 }
+.nav_title{
+  font-size: 20px;
+  width: 2vw;
+  gap: 10px;
+  display: flex;
+}
+.p1{
+  color: black;
+  font-weight: 700;
+}
+.p2{
+  color: rgb(65, 25, 11);
+  font-weight: 700;
+}
 
 nav{
   display: flex;
@@ -44,11 +58,30 @@ nav{
   height: 40px;
   margin-top: 10px;
   margin-left: 9px;
+  border: none;
+}
+.btn:hover{
+  cursor: pointer;
 }
 .btn2{
   border-radius: 10px;
   border: none;
 }
+.btn2:hover{
+  cursor:pointer;
+}
+.btn3{
+  border-radius: 10px;
+  border: none;
+  height: 30px;
+  width: 60px;
+  background-color: beige;
+}
+.btn3:hover{
+  cursor: pointer;
+  background-color: chocolate;
+}
+
 a{
   text-decoration: none;
   margin: 5px;
@@ -59,8 +92,15 @@ a:hover{
 }
 .adjust{
   height: 70vh;
+  text-align: center;
 }
-
+.formulario{
+  margin-top: 60px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  color: rgb(223, 127, 143);
+}
 footer {
   display: flex;
   justify-content: center;
@@ -123,6 +163,7 @@ form{
   flex-wrap: wrap;
   margin: 0 auto;
   text-align: center;
+  height: 60vh;
 }
 table {
  border-collapse: collapse;

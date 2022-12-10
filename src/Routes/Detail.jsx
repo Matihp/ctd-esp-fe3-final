@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
-//Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
+
 
 const Detail = () => {
 
@@ -17,7 +17,6 @@ const Detail = () => {
     .then(res=>setDentList(res.data))
   },[])
  
-  // Consumiendo el parametro dinamico de la URL deberan hacer un fetch a un user en especifico
   return (
     <>
       <h1>Detail Dentist {id} </h1>

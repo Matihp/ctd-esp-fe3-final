@@ -10,10 +10,9 @@ export const ContextGlobal = createContext();
 
 
 export const ContextProvider = ({ children }) => {
-  //Aqui deberan implementar la logica propia del Context, utilizando el hook useMemo
+
   const [data,setData]=useState([]);
   const [user,setUser]=useState(false)
-  const [loading,setLoading]=useState(true);
   const [state,dispatch]=useReducer(apiSwitch,initialState)
 
 
