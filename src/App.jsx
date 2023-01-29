@@ -7,9 +7,6 @@ function App() {
 
   const {state}=useGlobalStates()
     return (
-      // Hola juli,hice las routes en el index porque me resulto mas facil
-      //,se me complico el agregar varios destacados con el localstorage
-      //entonces solo se puede agregar uno y borrarlo,lo demás salio todo bien
       <div className="App" style={{ backgroundColor: state.dark && '#282c34',color: state.dark && 'white' }}>
         <Navbar/>
         <Outlet/>

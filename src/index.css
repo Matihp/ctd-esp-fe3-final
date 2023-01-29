@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-weight: 600;
 }
 
 code {
@@ -49,7 +50,7 @@ nav{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: pink;
+  background-color: #6cbcdb;
 }
 .btn{
   border-radius: 10px;
@@ -111,7 +112,7 @@ footer {
   width: 90%;
   height: 40px;
   margin-top: 2rem;
-  background-color: pink;
+  background-color: #6cbcdb;
   width: auto;
 }
 
