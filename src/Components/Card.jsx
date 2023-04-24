@@ -16,14 +16,14 @@ const Card = ({ name, username, id }) => {
   }
   
   const {state}=useGlobalStates()
-  const style={color: state.dark && '#FFF'};
+  const style={color: state.dark ?'#FFF':'black',textDecoration:'none'};
 
 
     return (
     <div className="card" style={{}}>
         {username ? <img src="./images/doctor.jpg" alt="doctor"width={200}height={200} /> : null}
-        {username ? <Link to={`/dentist/${id}`}style={style}><a>{name}</a></Link> : null }
-        <h5>{username}</h5>
+        {username ? <Link to={`/dentist/${id}`}style={style}>{name}</Link> : null }
+        <h5 style={{color:'gray'}}>{username}</h5>
         {username ? <button onClick={addFav}className="favButton">⭐</button> : null}  
     </div>
   );

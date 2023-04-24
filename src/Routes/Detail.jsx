@@ -18,7 +18,7 @@ const Detail = () => {
   },[])
  
   return (
-    <>
+    <main style={{height:'62vh'}}>
       <h1>Detail Dentist {id} </h1>
       <table>
         <tr>
@@ -34,7 +34,7 @@ const Detail = () => {
           <td>{dentList.website}</td>
         </tr>
       </table>
-    </>
+    </main>
   )
 }
 

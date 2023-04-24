@@ -52,6 +52,11 @@ nav{
   align-items: center;
   background-color: #6cbcdb;
 }
+.container nav a:hover{
+  
+  opacity: 0.6;
+  transition: all 0.4s; 
+}
 .btn{
   border-radius: 10px;
   background-color: black;
@@ -147,7 +152,10 @@ form{
 .card:hover{
   border: 0.5px solid rgb(206, 217, 142);
 }
-
+.card a:hover{
+  opacity: 0.6;
+  transition: all 0.6s;
+}
 .card-grid{
   display: flex;
   justify-content: space-evenly;

@@ -8,7 +8,7 @@ const Navbar = () => {
 
   const {state,dispatch}=useGlobalStates()
 
-  const style={color: state.dark && '#FFF'};
+  const style={color: state.dark ?'#FFF':'black',textDecoration:'none'};
   return (
     <div className='container'style={{ backgroundColor: state.dark && '#566573' }}>
         <div className='nav_title'>
