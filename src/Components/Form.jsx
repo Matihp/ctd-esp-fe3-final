@@ -14,9 +14,9 @@ const Form = () => {
     <div>
       <form className="formulario" onSubmit={handleSubmit}>
         <label htmlFor="">Nombre</label>
-        <input type="text"name='username' onChange={(e)=> setName(e.target.value)}/>
+        <input type="text"name='username' onChange={(e)=> setName(e.target.value)}required minLength={3}/>
         <label htmlFor="">Correo</label>
-        <input type="email"name='email' id="" />
+        <input type="email"name='email' id="" required minLength={5}/>
         <button className="btn3">Enviar</button>
       </form>
     </div>
